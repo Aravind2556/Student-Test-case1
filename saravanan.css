@@ -1,0 +1,43 @@
+
+  body {
+      
+      background: #fcecec;
+      padding: 20px;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      width: 300px;
+      border-radius: 8px;
+      
+    }
+    input, select, textarea {
+      width: 100%;
+      
+      padding: 8px;
+      border: 1px solid #ce0707;
+      border-radius: 5px;
+    }
+   .Employee_form_2{ 
+      form {
+      background: white;
+      padding: 20px;
+      width: 300px;
+      border-radius: 8px;
+      
+    }
+    input, select, textarea {
+      width: 100%;
+      
+      padding: 8px;
+      border: 1px solid #ce0707;
+      border-radius: 5px;
+    }
+   }
+   .for{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+   }
