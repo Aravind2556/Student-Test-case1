@@ -2,15 +2,15 @@
   body {
       
       background: #fcecec;
-      padding: 20px;
+      padding: 10px;
     }
-    form {
-      background: white;
+    /* .form {
+      background: rgb(162, 156, 156);
       padding: 20px;
       width: 300px;
       border-radius: 8px;
       
-    }
+    } */
     input, select, textarea {
       width: 100%;
       
@@ -20,19 +20,14 @@
     }
    .Employee_form_2{ 
       form {
-      background: white;
+      background: rgb(169, 166, 166);
       padding: 20px;
       width: 300px;
       border-radius: 8px;
       
-    }
-    input, select, textarea {
-      width: 100%;
       
-      padding: 8px;
-      border: 1px solid #ce0707;
-      border-radius: 5px;
     }
+  
    }
    .for{
     display: flex;
@@ -40,7 +35,24 @@
     padding: 10px;
     margin: 10px;
     border: none;
+    justify-content: space-evenly;
+    
+
    }
    .method{
     padding: 20px;
    }
+   
+  button{
+    padding: 10px;
+    color: black;
+    background-color: green;
+    
+
+  }
+   .arrange{
+    display: flex;
+    gap: 50%;
+
+   }
+  
