@@ -9,20 +9,110 @@
             background-color: indigo;
             color: white;
         }
-
+        .input{
+            margin-top: 30px;
+        }
+        .inputbox{
+            height: 20px;
+            width: 400px;
+            margin-top: 20px;
+        }
+        .div{
+            display: flex;
+            gap: 20px;
+        }
+        .div2{
+            display: flex;
+            justify-content: space-around;
+        }
+     
 
 
     </style>
 </head>
-<body>
+<body style="background-color:lightcyan">
     <h2>Employee Information</h2>
-    <div style="display: flex;">
+    <div style="display: flex; gap: 30px;">
     <div style="color: red">
         <br>please provide the name of your current</br>
         <br>Employee (put N/A here if currently unemployed)</br>
     </div>
     <div>
-        <input type="text" style="width: 400px;"  >
-    </div></div>
+        <input type="text" style=" width: 400px;" class="input"  >
+    </div>
+</div>
+
+    <b>Employee Address :</b>
+    <div class="div2">
+    <div>
+    <div class="div">
+        <p>Street Line 1:</p>
+        <input type="text" class="inputbox">
+    </div>
+     <div  class="div">
+        <p>Street Line 2:</p>
+        <input type="text"  class="inputbox">
+    </div>
+    <div  class="div">
+        <p>Street Line 3:</p>
+        <input type="text" class="inputbox">
+    </div>
+    <div style="display: flex; gap: 42px;">
+       <p>Country :</p>
+       <select style="width: 100px; height: 20px; margin-top: 18px;">
+            <option>Mali</option> 
+            <option>Nepal</option>
+            <option>Oman</option>
+            <option>Eritrea</option>
+            <option> Tuvalu</option>
+            <option> Kuwait</option>
+        </select>
+    </div>
+</div>
+    <div style="margin: top 1px;">
+    <div>
+        <p>City :</p>
+         <input type="text" style="width: 100px;">
+    </div>
+    <div>
+        <p style="font-size: x-large;">Province/State :</p>
+        <select>
+            <option>Tamil nadu</option> 
+            <option>Andhra Pradesh</option>
+            <option>Rajasthan</option>
+            <option> Odisha</option>
+            <option> Kerala</option>
+            <option> Punjab</option>
+        </select>
+    </div>
+    <div>
+        <p>Postal/Zip Code :</p>
+        <input type="text" style="width: 100px;">
+    </div>
+    </div>
+    </div>
+
+    <b>Position Info:</b>
+    <div class="div">
+        <p> What is your position title ?:</p>
+        <input type="text" class="inputbox">
+    </div>
+    <div class="div">
+        <p>What is current annual salary ?:</p>
+        <input type="text" style="height: 20px; width: 100px; margin-top: 10px;">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
