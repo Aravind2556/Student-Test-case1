@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -154,4 +154,58 @@
         });
     </script>
 </body>
-</html>
+</html> -->
+
+<form id="for">
+    <div class="method">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" placeholder="First name">
+        <div class="error" id="firstnameError"></div>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+const form = document.getElementById("for");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    let isValid = true;
+
+    const firstname = document.getElementById("firstname");
+    const firstnameError = document.getElementById("firstnameError");
+    const firstnamepattern = /^[A-Z][a-zA-Z]{3,}$/;
+
+    if (!firstname.value.match(firstnamepattern)) {
+        firstname.classList.add("invalid");
+        firstname.classList.remove("valid");
+        firstnameError.textContent = "First name must start with uppercase and have at least 3 letters";
+        isValid = false;
+    } else {
+        firstname.classList.add("valid");
+        firstname.classList.remove("invalid");
+        firstnameError.textContent = "";
+    }
+
+    if (isValid) {
+        alert("Form submitted successfully!");
+        form.reset();
+        document.querySelectorAll("input").forEach(input => {
+            input.classList.remove("valid", "invalid");
+        });
+    }
+});
+</script>
+
+<style>
+input.valid {
+    border: 2px solid green;
+}
+input.invalid {
+    border: 2px solid red;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+</style>
