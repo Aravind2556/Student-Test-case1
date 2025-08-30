@@ -24,147 +24,306 @@
         </div>
     </div>
 
+    <!-- one file -->
+    <form id="form">
+        <div class="for">
 
-    <div class="for">
-        <div class="Employee_form_2">
-            <form class="form">
+
+            <div class="Employee_form_2">
                 <div class="method">
-                    <label>First Name</label>
-                    <input type="text" name="fullname" placeholder="First name">
+                    <label for="Firstname">First Name</label>
+                    <input type="text" id="Firstname" placeholder="Firstname">
+                    <div class="error" id="FirstnamError"></div>
                 </div>
 
-                <div class="method"><label>Display name</label>
-                    <input type="text" name="Display Name" placeholder="Display name">
+                <div class="method">
+                    <label for="Displayname">Display name</label>
+                    <input type="text" id="DisplayName" placeholder="Displayname">
+                    <div class="error" id="DisplayNameError"></div>
                 </div>
 
-                <div class="method"><label>Persional Email</label>
-                    <input type="email" name="email" placeholder="Email">
-                </div>
-
-
-                <div class="method"><label>Altrative mobile number </label>
-                    <input type="number" name="mobile number" placeholder="mobile number">
-                </div>
-
-
-
-                <div class="method"> <label> Door number </label>
-                    <input type="number" name="number" placeholder="Door number">
+                <div class="method">
+                    <label for="Persionalemail">Persional Email</label>
+                    <input type="email" id="Persionalemail" placeholder="Email">
+                    <div class="error" id="PersionalemailError"></div>
                 </div>
 
 
-                <div class="method"><label> Address line</label>
-                    <input type="text" name="Address" placeholder="Address">
+                <div class="method">
+                    <label for="Altrative number">Altrative mobile number </label>
+                    <input type="number" id="Altrative number" placeholder="mobile number">
+                    <div class="error" id="Altrative number Error"></div>
                 </div>
 
-                <div class="method"> <label>District</label>
-                    <select name="District">
+
+
+                <div class="method">
+                    <label for="Door number"> Door number </label>
+                    <input type="number" id="Door number" placeholder="Door number">
+                    <div class="error" id="Door number error"></div>
+                </div>
+
+
+                <div class="method">
+                    <label for="Address line"> Address line</label>
+                    <input type="text" id="Address line" placeholder="Address">
+                    <div class="error" id="Address line error"></div>
+                </div>
+
+                <div class="method">
+                    <label for="District">District</label>
+                    <select id="District">
                         <option value="Erode">Erode</option>
                         <option value="ooty">ooty</option>
                         <option value="Madurai">Madurai</option>
                     </select>
+                    <div class="error" id="District error"></div>
                 </div>
 
+                <center><button type="submit">sumbit</button></center>
 
-            </form>
 
-        </div>
+            </div>
 
-        <div class="Employee_form_2">
-            <form class="form">
+            <!-- second file -->
+            <div class="Employee_form_2">
+
                 <div class="method">
-                    <label>Middle Name</label>
-                    <input type="text" name="fullname" placeholder="Middle name ">
-                </div>
-
-                <div class="method"> <label>Date of birth</label>
-                    <input type="text" name="Display Name" placeholder="dd-mm-yyyy">
-                </div>
-
-                <div class="method"><label>Persional Email</label>
-                    <input type="email" name="email" placeholder="enter email(eg.you@gmail.com)">
+                    <label for="Middlename">Middle Name</label>
+                    <input type="text" id="Middlename" placeholder="Middle name ">
+                    <div class="error" id=" MiddlenameError"></div>
                 </div>
 
 
-                <div class="method"><label>Nationaly </label>
-                    <select name="District " aria-placeholder="Nationaly">
+                <div class="method">
+                    <label for="Dateofbirth">Date of birth</label>
+                    <input type="text" id="Dateofbirth" placeholder="dd-mm-yyyy">
+                    <div class="error" id="DateofbirthError"></div>
+                </div>
+
+                <div class="method">
+                    <label for="Altrativeemail">Altrative Email</label>
+                    <input type="email" id="AltrativeEmail" placeholder="enter email(eg.you@gmail.com)">
+                    <div class="error" id="AltrativeEmailError"></div>
+                </div>
+
+
+                <div class="method">
+                    <label for="Nationaly">Nationaly </label>
+                    <select id="Nationaly">
                         <option value="Indian"> Indian</option>
                         <option value="sri lanks"> sri lanks</option>
                         <option value="delhi"> delhi</option>
                     </select>
+                    <div class="error" id="Nationaly"></div>
                 </div>
 
-
-
-                <div class="method"> <label> Street name/ Number</label>
-                    <input type="month,text" name="number" placeholder=" Street name/ Number">
-                </div>
-
-
-                <div class="method"><label> Address line</label>
-                    <input type="text" name="Address" placeholder="Address">
-                </div>
-
-                <div> <label>District</label>
-                    <select name="District">
-                        <option value="Erode">Erode</option>
-                        <option value="ooty">ooty</option>
-                        <option value="Madurai">Madurai</option>
-                    </select>
-                </div>
 
 
                 <div class="method">
-                    <label>Home Toun</label>
-                    <input type="text" placeholder="Home Toun">
+                    <label for="Streetnumber"> Street name/ Number</label>
+                    <input type="text" id="Streetnumber" placeholder=" Street name/ Number">
+                    <div class="error" id="Streetnumbererror"></div>
                 </div>
-            </form>
-
-        </div>
 
 
 
 
 
-        <div class="Employee_form_2">
-            <form class="form">
+
                 <div class="method">
-                    <label>last Name Name</label>
-                    <input type="text" name="fullname" placeholder="last name">
+                    <label for="HomeToun">Home Toun</label>
+                    <input type="text" id="HomeToun" placeholder="Home Toun">
+                    <div class="error" id="HomeTounError"></div>
+
                 </div>
 
-                <div class="method"> <label>Gender</label>
-                    <select>
+
+            </div>
+
+
+            <!-- 3 -->
+
+
+            <div class="Employee_form_2">
+
+                <div class="method">
+                    <label for="lastname">last Name</label>
+                    <input type="text" id="lastname" placeholder="last name">
+                    <div class="error" id="lastnameerror"></div>
+                </div>
+
+                <div class="method">
+                    <label for="Gender">Gender</label>
+                    <select id=" Gender">
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                     </select>
+                    <div class="error" id=" Gender error"></div>
                 </div>
 
-                <div class="method"><label>mobile Number</label>
-                    <input type="email" name="email" placeholder="Mobile Number (10 digits)">
-                </div>
+                <div class="method">
+                    <label for="AltrativeMobile">mobile Number</label>
+                    <input type="email" id="AltrativeMobile" placeholder="Mobile Number (10 digits)">
+                    <div class="error" id="AltrativeMobilenumberError"></div>
 
-
-                <div class="method"><label>state </label>
-                    <input type="text" placeholder="state">
-
-                </div>
-
-
-
-                <div class="method"> <label> Address line 1</label>
-                    <input type="text" name="number" placeholder=" Enter Address line Eg.(Area)">
                 </div>
 
 
-                <div class="method"><label> Pinecode</label>
-                    <input type="text" name="Address" placeholder="Pincode">
+                <div class="method">
+                    <label for="state">state </label>
+                    <input type="text" placeholder="state" id="state">
+                    <div class="error" id=" stateError"></div>
+
+
                 </div>
 
 
+
+                <div class="method">
+                    <label for="Address line 1"> Address line 1</label>
+                    <input type="text" id="Addressline1" placeholder=" Enter Address line Eg.(Area)">
+                    <div class="error" id="Addressline1Error"> </div>
+                </div>
+
+
+                <div class="method">
+                    <label for="Pincode"> Pinecode</label>
+                    <input type="text" id="Pincode" placeholder="Pincode">
+                    <div class="error" id="PincodeError "></div>
+
+                </div>
+
+
+
+            </div>
         </div>
-        
+
+
+    </form>
     </div>
+
+    <!-- coding -->
+
+
+    <script>
+
+        const form = document.getElementById("form");
+
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            let isValid = true;
+
+
+            //  firat name validaction
+
+            const Firstname = document.getElementById("Firstname");
+            const FirstnamError = document.getElementById("FirstnamError");
+            const FirstnamePattern = /^[A-Z][a-zA-Z]{3,}$/;
+
+
+
+            if (!Firstname.value.match(FirstnamePattern)) {
+                Firstname.classList.add("invalid");
+                Firstname.classList.remove("valid");
+                FirstnamError.textContent = "First name must start with uppercase and have at least 4 letters";
+                isValid = false;
+            } else {
+                Firstname.classList.add("valid");
+                Firstname.classList.remove("invalid");
+                FirstnamError.textContent = "";
+
+            }
+
+
+            // Display name
+
+            const DisplayName = document.getElementById("DisplayName");
+            const DisplayNameError = document.getElementById("DisplayNameError");
+           const DisplayPattern = /^[A-Z][a-zA-Z]{3,}$/;
+
+
+            if (!DisplayName.value.match(DisplayPattern)) {
+                DisplayName.classList.add("invalid");
+                DisplayName.classList.remove("valid");
+                DisplayNameError.textContent = " Display name must with uppercase and have at least 4 letters";
+                isValid = false;
+
+            } else {
+                DisplayName.classList.add("valid");
+                DisplayName.classList.remove("invalid");
+                DisplayNameError.textContent = "";
+
+            }
+
+            // personial email
+
+
+
+            const Persionalemail = document.getElementById("Persionalemail");
+            const PersionalemailError = document.getElementById("PersionalemailError");
+            const PersionalemailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+
+
+
+            if (!Persionalemail.value.match(PersionalemailPattern)) {
+                Persionalemail.classList.add("invalid");
+                Persionalemail.classList.remove("valid");
+                PersionalemailError.textContent = "Email must be in the format example@gmail.com";
+                isValid = false;
+            } else {
+                Persionalemail.classList.add("valid");
+                Persionalemail.classList.remove("invalid");
+                PersionalemailError.textContent = "";
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            if (isValid) {
+                alert("Form submitted successfully!");
+                form.reset();
+                document.querySelectorAll("input").forEach(input => {
+                    input.classList.remove("valid");
+                });
+            }
+
+        });
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
 
 
 

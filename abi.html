@@ -1,169 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h2{
-            background-color: indigo;
-            color: white;
-        }
-        .input{
-            margin-top: 30px;
-        }
-        .inputbox{
-            height: 20px;
-            width: 400px;
-            margin-top: 20px;
-        }
-        .div{
-            display: flex;
-            gap: 20px;
-        }
-        .div2{
-            display: flex;
-            justify-content: space-around;
-        }
-     
+    <link rel="stylesheet" href="abi.css">
 
-
-    </style>
 </head>
+
 <body style="background-color:lightcyan">
     <h2>Employee Information</h2>
     <div style="display: flex; gap: 30px;">
-    <div style="color: red">
-        <br>please provide the name of your current</br>
-        <br>Employee (put N/A here if currently unemployed)</br>
+        <div style="color: red">
+            <br for="current">please provide the name of your current</br>
+            <br>Employee (put N/A here if currently unemployed)</br>
+        </div>
+        <form id="current">
+            <input type="text" style=" width: 400px;" class="input">
+            <div class="error" id="currentError"></div>
+        </form>
     </div>
-    <div>
-        <input type="text" style=" width: 400px;" class="input"  >
-    </div>
-</div>
 
     <b>Employee Address :</b>
     <div class="div2">
+        <div class="div1">
+            <div class="div">
+                <p>Street Line 1:</p>
+                <input type="text" class="inputbox">
+            </div>
+            <div class="div">
+                <p>Street Line 2:</p>
+                <input type="text" class="inputbox">
+            </div>
+            <div class="div">
+                <p> Street Line 3:</p>
+                <input type="text" class="inputbox">
+            </div>
+            <div style="display: flex; gap: 42px;">
+                <p>Country :</p>
+                <select style="width: 100px; height: 20px; margin-top: 18px;">
+                    <option>select</option>
+                    <option>Nepal</option>
+                    <option>Oman</option>
+                    <option>Eritrea</option>
+                    <option> Tuvalu</option>
+                    <option> Kuwait</option>
+                </select>
+            </div>
+        </div>
+        <div style="display: block;">
+            <div style="display: flex; gap:80px ; width: 100px; height: 20px;">
+                <p style="margin-top: 5px;">Date:</p>
+                <input type="date">
+            </div>
+            <div style="display: flex; gap: 80px;">
+                <p>City :</p>
+                <input type="text" style="width: 100px; height: 20px; margin-top: 18px;">
+            </div>
+            <div style="display: flex; gap: 25px;">
+                <p>province/state:</p>
+                <select style="width: 100px; height: 20px; margin-top: 18px;">
+                    <option>select</option>
+                    <option>Tamil nadu</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Rajasthan</option>
+                    <option> Odisha</option>
+                    <option> Kerala</option>
+                    <option> Punjab</option>
+                </select>
+            </div>
+            <div style="display: flex; gap: 18px;">
+                <p>postal/Zip code:</p>
+                <input type="number" style="width: 100px; height: 20px; margin-top: 15px;">
+            </div>
+            <div style="display: flex; gap: 85px;">
+                <p>Age:</p>
+                <input type="number" style="width: 100px;  height: 20px; margin-top: 15px">
+            </div>
+        </div>
+    </div>
+
+    <b>Position Info :</b>
+
+    <div style="margin-left: 120px;">
+        <div style="display: flex; gap: 95px;">
+            <p>What is your Position title?:</p>
+            <input type="text" style="width: 400px; height: 20px; margin-top: 15px;">
+        </div>
+        <div style="display: flex; gap: 43px;">
+            <p>what is your current annual salary?:</p>
+            <input type="number" style="width: 200px; height: 20px; margin-top: 15px;">
+        </div>
+        <div style="display: flex; gap: 18px;">
+            <P>What is your current responsible level?:</P>
+            <select style="width: 100px; height: 20px; margin-top: 18px;">
+                <option>select</option>
+                <option>CEO or Owner</option>
+                <option>vice President</option>
+                <option>senior Manager or Director</option>
+                <option> Manager</option>
+                <option> Other</option>
+            </select>
+        </div>
+        <div style="display: flex; gap: 125px;">
+            <P>If Other,please specify:</P>
+            <input type="text" style="width: 400px; height: 20px; margin-top: 15px;">
+        </div>
+        <div style="display: flex; gap: 125px;">
+            <P>What is your Industry?:</P>
+            <select style="width: 100px; height: 20px; margin-top: 18px;">
+                <option>select</option>
+                <option>Agriculture</option>
+                <option>Forestry</option>
+                <option>Oil & Gas</option>
+                <option>Textiles & Apparel</option>
+                <option>Human Resources</option>
+            </select>
+        </div>
+        <div style="display: flex; gap: 125px;">
+            <P>If Other, please specify:</P>
+            <input type="text" style="width: 400px; height: 20px; margin-top: 15px;">
+        </div>
+        <div style="display: flex; gap: 100px;">
+            <div>
+                <br>IS your organization Public,</br>
+                <br> Private,or Not for profit ?:</br>
+            </div>
+            <div>
+                <select style="width: 100px; height: 20px; margin-top: 30px;">
+                    <option>select</option>
+                    <option>private</option>
+                    <option>Public</option>
+                    <option>not profit</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
     <div>
-    <div class="div">
-        <p>Street Line 1:</p>
-        <input type="text" class="inputbox">
+        <button id="submit">Submit</button>
+        <button id="cancel">channel</button>
     </div>
-     <div  class="div">
-        <p>Street Line 2:</p>
-        <input type="text"  class="inputbox">
-    </div>
-    <div  class="div">
-        <p>Street Line 3:</p>
-        <input type="text" class="inputbox">
-    </div>
-    <div style="display: flex; gap: 42px;">
-       <p>Country :</p>
-       <select style="width: 100px; height: 20px; margin-top: 18px;">
-            <option>select</option> 
-            <option>Nepal</option>
-            <option>Oman</option>
-            <option>Eritrea</option>
-            <option> Tuvalu</option>
-            <option> Kuwait</option>
-        </select>
-    </div>
-</div>
-<div style="display: block;">
-    <div style="display: flex; gap: 80px;">
-        <p>City :</p>
-         <input type="text"   style="width: 100px; height: 20px; margin-top: 18px;">
-    </div>
-    <div style="display: flex; gap: 25px;">
-        <p>province/state:</p>
-        <select  style="width: 100px; height: 20px; margin-top: 18px;">
-            <option>select</option> 
-            <option>Tamil nadu</option> 
-            <option>Andhra Pradesh</option>
-            <option>Rajasthan</option>
-            <option> Odisha</option>
-            <option> Kerala</option>
-            <option> Punjab</option>
-        </select>
-    </div>
-    <div style="display: flex; gap: 18px;">
-        <p>postal/Zip code:</p>
-        <input type="number" style="width: 100px; height: 20px; margin-top: 15px;">
-    </div>
-    <div  style="display: flex; gap: 85px;">
-        <p>Age:</p>
-        <input type="number" style="width: 100px;  height: 20px; margin-top: 15px">
-    </div>
-</div>
-</div>
-
-<b>Position Info :</b>
-
-<div style="margin-left: 120px;">
-<div style="display: flex; gap: 95px;">
-    <p>What is your Position title?:</p>
-    <input type="text" style="width: 400px; height: 20px; margin-top: 15px;">
-</div>
-<div style="display: flex; gap: 43px;">
-    <p>what is your current annual salary?:</p>
-     <input type="number" style="width: 200px; height: 20px; margin-top: 15px;">
-</div>
-<div style="display: flex; gap: 18px;">
-    <P>What is your current responsible level?:</P>
-    <select  style="width: 100px; height: 20px; margin-top: 18px;">
-            <option>select</option>
-            <option>CEO or Owner</option> 
-            <option>vice President</option>
-            <option>senior Manager or Director</option>
-            <option> Manager</option>
-            <option> Other</option>
-        </select>
-</div>
-<div style="display: flex; gap: 125px;">
-    <P>If Other,please specify:</P>
-    <input type="text" style="width: 400px; height: 20px; margin-top: 15px;">
-</div>
-<div  style="display: flex; gap: 125px;">
-    <P>What is your Industry?:</P>
-    <select  style="width: 100px; height: 20px; margin-top: 18px;">
-            <option>select</option> 
-            <option>Agriculture</option> 
-            <option>Forestry</option>
-            <option>Oil & Gas</option>
-            <option>Textiles & Apparel</option>
-            <option>Human Resources</option>
-        </select>
-</div>
-<div style="display: flex; gap: 125px;">
-    <P>If Other, please specify:</P>
-    <input type="text" style="width: 400px; height: 20px; margin-top: 15px;">
-</div>
-<div style="display: flex; gap: 100px;">
-    <div>
-        <br>IS your organization Public,</br>
-        <br> Private,or Not for profit ?:</br>
-    </div>
-    <div>
-        <select  style="width: 100px; height: 20px; margin-top: 30px;">
-            <option>select</option> 
-            <option>private</option>
-            <option>Public</option>
-            <option>not profit</option>
-        </select>
-    </div>
-</div>
-</div>
-        
 
 
+    <script>
 
+        document.getElementById("submit").addEventListener("click", () => {
+            alert("form submited...");
+        });
 
+        document.getElementById("cancel").addEventListener("click", () => {
+            alert("fill the form...");
+        });
 
-
-
-
-
-
+    </script>
 
 </body>
+
 </html>
