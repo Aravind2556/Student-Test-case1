@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<!DOCTYPE html> <html lang="en"> 
+<!-- <!DOCTYPE html> <html lang="en"> 
     <head>
          <meta charset="UTF-8"> 
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,43 +28,164 @@
                          <p style="background-color: brown; color: white; margin-left: 100px; margin-right: 100px;"> 1.Applicant Details:</p>
                          <div class="row">
                             <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" ><br>
+                            <input type="text" id="name" name="name" style="max-width: 1000px;" ><br>
                             <label for="Father's Name">Father's Name</label>
-                            <input type="text" id="Father's Name">
+                            <input type="text" id="Father's Name" >
                          </div>
                       </form> 
                    </body>
-     </html>
-=======
+     </html> -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fce8e8;
+      margin: 20px;
+    }
+    .section-title {
+      background: #a02626;
+      color: white;
+      padding: 8px;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 5px;
+      background: #fff0f0;
+    }
+    td {
+      padding: 6px;
+      border: 1px solid #ccc;
+      vertical-align: middle;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"], 
+    input[type="date"], 
+    input[type="number"], 
+    select {
+      width: 95%;
+      padding: 5px;
+      border: 1px solid #888;
+      border-radius: 3px;
+    }
+     .res
+             {
+                 background-color: lightblue; 
+                 margin-left: 100px; 
+                 margin-right: 100px; 
+                 padding: 20px;
+             } 
+             p{
+              font-size:large;
+              text-align: center;
+              color: darkblue;
 
-        h1 {
-            background-color: rgb(195, 105, 150);
-            text-align: center;
-            margin-left: 400px;
-            margin-right: 400px;
-        }
-    </style>
+             }
+  </style>
 </head>
-
 <body>
-    <div>
-        <h1>Swetha</h1>
-        <p>san technovation project</p>
-
-    </div>
+  <p> 
+                        ONLINE ACCOUNT OPENING/APPLICANT INFORMATION FORM FOR RESIDENT INDIVIDUALS
+                     </p>
+   <div class="res"> 
+                            <label for="Reference No:">Reference No:</label> 
+                            <input type="number" id="Reference No" style="margin-right:200px"> 
+                            <label for="Customer ID:">Customer ID:</label>
+                            <input type="number" id="Customer ID" style="margin-right:200px">
+                            <label for="Account No:">Account No:</label>
+                            <input type="number" id="Account No "><br>
+                            <label for="Account Scheme:">Account Scheme:</label>
+                            <input type="text" id="Account Scheme" style="margin-top:20px; margin-right:150px ;">
+                            <label for="Purpose of Account">Purpose of Account</label>
+                            <input type="text"  id="Purpose of Account"  style="margin-right: 150px; margin-top: 20px;">
+                            <label for="Account Type"> Account Type</label>
+                            <input type="text" id="Account Type" style=" margin-top: 20px;">
+                                  
+                         </div>
+  <div class="section-title">1. Applicant Details:</div>
+  <table>
+    <tr>
+      <td><label>Title</label></td>
+      <td><input type="text"></td>
+      <td><label>Full Name</label></td>
+      <td colspan="3"><input type="text"></td>
+    </tr>
+    <tr>
+      <td><label>Father's Name</label></td>
+      <td colspan="5"><input type="text"></td>
+    </tr>
+    <tr>
+      <td><label>Mother's Name</label></td>
+      <td colspan="5"><input type="text"></td>
+    </tr>
+    <tr>
+      <td><label>Date of Birth</label></td>
+      <td><input type="date"></td>
+      <td><label>Gender</label></td>
+      <td><select><option>Male</option><option>Female</option></select></td>
+      <td><label>Married</label></td>
+      <td><select><option>Yes</option><option>No</option></select></td>
+    </tr>
+    <tr>
+      <td><label>Spouse Name</label></td>
+      <td><input type="text"></td>
+      <td><label>Maiden Name</label></td>
+      <td><input type="text"></td>
+      <td><label>Ex-service Man</label></td>
+      <td><select><option>Yes</option><option>No</option></select></td>
+    </tr>
+    <tr>
+      <td><label>PAN No.</label></td>
+      <td><input type="text"></td>
+      <td><label>Residential Status</label></td>
+      <td><input type="text"></td>
+      <td><label>Place of Birth</label></td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td><label>Country of Birth</label></td>
+      <td><input type="text"></td>
+      <td><label>Physically/Visually Handicapped</label></td>
+      <td><select><option>Yes</option><option>No</option></select></td>
+      <td><label>Aadhaar No.</label></td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td><label>Occupation</label></td>
+      <td><input type="text"></td>
+      <td><label>Code</label></td>
+      <td><input type="text"></td>
+      <td><label>Village Code</label></td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td><label>Education</label></td>
+      <td><input type="text"></td>
+      <td><label>Nationality</label></td>
+      <td><input type="text"></td>
+      <td><label>Religion</label></td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td><label>Caste</label></td>
+      <td><input type="text"></td>
+      <td colspan="4"><label>Name of Employer / Profession / Nature of Business / Industry</label> <br><input type="text"></td>
+    </tr>
+    <tr><td><label>upload photo</label></td>
+    <td><input type="file" accept="image/*"></td>
+    </tr>
+  </table>
+  <!-- <label>
+    upload photo
+  </label>
+  <input type="file" accept="image/*"> -->
 </body>
-
 </html>
->>>>>>> d38e5962db1bb2cdcfa2a1e3026a670419a7b44d
