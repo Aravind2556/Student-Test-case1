@@ -1,58 +1,69 @@
+body {
 
-  body {
-      
-      background: #fcecec;
-      padding: 10px;
-    }
-    /* .form {
-      background: rgb(162, 156, 156);
-      padding: 20px;
-      width: 300px;
-      border-radius: 8px;
-      
-    } */
-    input, select, textarea {
-      width: 100%;
-      
-      padding: 8px;
-      border: 1px solid #ce0707;
-      border-radius: 5px;
-    }
-   .Employee_form_2{ 
-      form {
-      background: rgb(169, 166, 166);
-      padding: 20px;
-      width: 300px;
-      border-radius: 8px;
-      
-      
-    }
-  
-   }
-   .for{
-    display: flex;
-    gap: 30px;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    justify-content: space-evenly;
-    
+  background: #fcecec;
+  padding: 10px;
+}
 
-   }
-   .method{
-    padding: 20px;
-   }
-   
-  button{
-    padding: 10px;
-    color: black;
-    background-color: green;
-    
 
-  }
-   .arrange{
-    display: flex;
-    gap: 50%;
+input,
+select,
+textarea {
+  width: 100%;
 
-   }
-  
+  padding: 8px;
+  border: 1px solid #ce0707;
+  border-radius: 5px;
+}
+
+
+
+.for {
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  margin: 10px;
+
+  justify-content: space-evenly;
+
+
+}
+
+.method {
+  padding: 20px;
+  width: auto;
+}
+
+button {
+  padding: 10px;
+  color: black;
+  background-color: green;
+
+
+}
+
+.arrange {
+  display: flex;
+  gap: 50%;
+  border: none;
+
+}
+
+.error {
+  color: red;
+  font-size: 15px;
+}
+
+.valid {
+  border-color: green !important;
+}
+
+.invalid {
+  border-color: red !important;
+}
+.Employee_form_2{
+    background: rgb(169, 166, 166);
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  border: solid;
+}
