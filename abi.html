@@ -5,65 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h2 {
-            background-color: indigo;
-            color: white;
-        }
+    <link rel="stylesheet" href="abi.css">
 
-        .input {
-            margin-top: 30px;
-        }
-
-        .inputbox {
-            height: 20px;
-            width: 400px;
-            margin-top: 20px;
-        }
-
-        .div {
-            display: flex;
-            gap: 20px;
-        }
-
-        .div2 {
-            display: flex;
-            justify-content: space-around;
-        }
-        .submit{
-            background-color: crimson;
-            color: white;
-            justify-content: center;
-            border-radius: 30px;
-            margin-left: 50%;
-            padding: 10px;
-        }
-        .channel{
-            background-color: green;
-            color: white;
-            padding: 10px;
-            border-radius: 30px;
-        }
-
-        
-    </style>
 </head>
 
 <body style="background-color:lightcyan">
     <h2>Employee Information</h2>
     <div style="display: flex; gap: 30px;">
         <div style="color: red">
-            <br>please provide the name of your current</br>
+            <br for="current">please provide the name of your current</br>
             <br>Employee (put N/A here if currently unemployed)</br>
         </div>
-        <div>
+        <form id="current">
             <input type="text" style=" width: 400px;" class="input">
-        </div>
+            <div class="error" id="currentError"></div>
+        </form>
     </div>
 
     <b>Employee Address :</b>
     <div class="div2">
-        <div>
+        <div class="div1">
             <div class="div">
                 <p>Street Line 1:</p>
                 <input type="text" class="inputbox">
@@ -89,6 +50,10 @@
             </div>
         </div>
         <div style="display: block;">
+            <div style="display: flex; gap:80px ; width: 100px; height: 20px;">
+                <p style="margin-top: 5px;">Date:</p>
+                <input type="date">
+            </div>
             <div style="display: flex; gap: 80px;">
                 <p>City :</p>
                 <input type="text" style="width: 100px; height: 20px; margin-top: 18px;">
@@ -172,21 +137,24 @@
             </div>
         </div>
     </div>
+
     <div>
-    <input type="submit" placeholder="submit" class="submit">
-    <button class="channel">Channel</button>
+        <button id="submit">Submit</button>
+        <button id="cancel">channel</button>
     </div>
-    
 
 
+    <script>
 
+        document.getElementById("submit").addEventListener("click", () => {
+            alert("form submited...");
+        });
 
+        document.getElementById("cancel").addEventListener("click", () => {
+            alert("fill the form...");
+        });
 
-
-
-
-
-
+    </script>
 
 </body>
 
